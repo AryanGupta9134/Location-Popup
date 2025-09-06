@@ -35,8 +35,8 @@ const LocationData: React.FC<IMapComponentProps> = ({
           attribution='&copy; <a href="https://www.openstreetmap.org/">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
         />
 
-        {locations.map((m, idx) => (
-          <Marker position={[m.lat, m.lng]} key={idx}></Marker>
+        {locations.map((curr, idx) => (
+          <Marker position={[curr.lat, curr.lng]} key={idx}></Marker>
         ))}
       </MapContainer>
     </div>
